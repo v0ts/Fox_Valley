@@ -1,8 +1,13 @@
+* {
+  color: #fff;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
 .header {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
-	height: 80px;
+  height: 80px;
 }
 
 .header .container {
@@ -14,7 +19,7 @@
 .header__logo-link {
   position: absolute;
   left: 30px;
-	top: 0.8rem;
+  top: 0.8rem;
 }
 
 .header__img {
@@ -28,54 +33,187 @@
 }
 
 .header__link {
-  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
-  font-style: normal;
   font-size: calc(0.6rem + 0.6vw);
   color: #d7d7d7;
+  transition-property: color;
+  transition-duration: 700ms;
+  transition-timing-function: linear;
+}
+
+.header__link:hover {
+  color: #fff;
 }
 
 .hero {
-	background: linear-gradient(90deg, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.3) 30%), url(/img/minecraft_vibe.webp);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.3) 30%,
+      rgba(0, 0, 0, 0.3) 30%
+    ),
+    url(/img/minecraft_vibe.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.hero .container { 
-	height: 100vh;
-	display: flex;
-	align-items: center;
+.hero .container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero__img {
+  max-width: 500px;
+}
+
+.hero__text {
+  font-weight: 500;
+  font-size: calc(0.6rem + 0.6vw);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  width: 310px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+.hero__link {
+  font-weight: 500;
+  font-size: calc(0.6rem + 0.6vw);
+  padding: 15px;
+  margin-top: 30px;
+  background-color: rgba(255, 130, 0, 0.8);
+  color: #d7d7d7;
+  border-radius: 25px;
+  transition-property: transform, color;
+  transition-duration: 700ms;
+  transition-timing-function: ease-out;
+}
+
+.hero__link:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.about-us {
+  background-color: rgba(22, 21, 27, 255);
+}
+
+.about-us .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-us__title {
+  padding-top: 50px;
+  font-weight: 500;
+  font-size: calc(2rem + 1vw);
+  margin-bottom: 25px;
+}
+
+.about-us__list {
+  display: flex;
+  gap: 50px;
+	flex-wrap: wrap;
 	justify-content: center;
+
+	@media screen and (max-width: 1200px) {
+		gap: 20px;
+	}
+}
+
+.about-us__item {
+  background-color: rgba(29, 28, 34, 255);
+  border: solid 2px rgba(107, 106, 112, 255);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+  max-width: 330px;
+}
+
+.about-us__box {
+  display: flex;
+  gap: 15px;
+}
+
+.about-us__img {
+  width: 40px;
+  height: 40px;
+}
+
+.about-us__text {
+  font-weight: 500;
+  font-size: calc(0.9rem + 0.9vw);
+  margin-bottom: 10px;
+  color: #ff9900;
+}
+
+.about-us__subtext {
+  font-size: calc(0.7rem + 0.6vw);
+}
+
+.play {
+  background-color: rgba(22, 21, 27, 255);
+  height: 1000px;
+}
+
+.play .container { 
+	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
-.hero__img { 
-	max-width: 500px;
+.play__title {
+	font-weight: 500; 
+	font-size: calc(2rem + 1vw);
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
-.hero__text { 
-	font-family: "Montserrat Alternates", sans-serif;
+.play__list {
+  display: flex;
+	gap: 50px;
+}
+
+.play__item { 
+	background-color: rgba(29, 28, 34, 255);
+  border: solid 2px rgba(107, 106, 112, 255);
+  border-radius: 20px;
+	overflow: hidden;
+	max-width: 340px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.play__text {
   font-weight: 500;
-  font-style: normal;
-	font-size: calc(0.6rem + 0.6vw);
-	text-align: center;
-	padding: 15px;
+  font-size: calc(0.7rem + 0.8vw);
+	color: #ff9900;
+}
+
+.play__subtext { 
+	font-size: calc(0.4rem + 0.8vw);
+}
+
+.play__span { 
+	color: #ff9900;
+}
+
+.play__second-list { 
+	display: flex;
+	gap: 40px;
 	margin-top: 20px;
-	width: 310px;
-	color: #d7d7d7;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 12px;
 }
 
-.hero__link { 
-	font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-	font-size: calc(0.6rem + 0.6vw);
-	padding: 15px;
-	margin-top: 30px;
-	background-color: rgba(255, 130, 0, 0.8);
-	color: #d7d7d7;
-	border-radius: 25px;
+.play__second-item { 
+  border-radius: 10px;
+	overflow: hidden;
+	max-width: 350px;
 }
