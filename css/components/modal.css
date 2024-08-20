@@ -1,0 +1,55 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal { 
+	height: calc(100vh - 80px);
+	margin-top: 80px;
+}
+
+.modal__button {
+  background-color: #ff9900;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal__img {
+  width: 40px;
+  height: 40px;
+}
+
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  list-style: none;
+	gap: 30px;
+}
+
+.modal__link {
+  font-size: calc(0.4rem + 3vw);
+  color: #ebebeb;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 22px;
+}

@@ -19,7 +19,10 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
+    <link rel="stylesheet" href="./css/components/modal.css">
   </head>
   <body>
     <header class="header">
@@ -29,21 +32,24 @@
         </a>
         <ul class="header__list">
           <li class="header__item">
-            <a href="" class="header__link">Головна</a>
+            <a href="./index.html" class="header__link">Головна</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__link">Новини</a>
+            <a href="./news.html" class="header__link">Новини</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__link">Івенти</a>
+            <a href="/events.html" class="header__link">Івенти</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__link">Галерея</a>
+            <a href="./gallery.html" class="header__link">Галерея</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__link">Правила</a>
+            <a href="./rules.html" class="header__link">Правила</a>
           </li>
         </ul>
+        <button data-modal-open class="header__modal-button " type="button">
+          <img class="header__modal-img" src="./img/menu.webp" alt="">
+        </button>
       </div>
     </header>
     <main class="main">
@@ -120,7 +126,8 @@
               <p class="play__subtext">
                 Приєднайтесь до діскорд каналу
                 <a class="play__span" href="https://discord.gg/EhF5wEKrKe"
-                  >Долина Лисиць</a>
+                  >Долина Лисиць</a
+                >
               </p>
             </li>
             <li class="play__item">
@@ -138,17 +145,89 @@
           </ul>
           <ul class="play__second-list">
             <li class="play__second-item">
-              <img src="./img/minecraft_vibe.webp" alt="якщо тут немає іконки писати в дс @_v0ts_ або власнику сервера" class="play__img">
+              <img
+                src="./img/minecraft_vibe.webp"
+                alt="якщо тут немає іконки писати в дс @_v0ts_ або власнику сервера"
+                class="play__img"
+              />
             </li>
             <li class="play__second-item">
-              <img src="./img/minecraft_vibe.webp" alt="якщо тут немає іконки писати в дс @_v0ts_ або власнику сервера" class="play__img">
+              <img
+                src="./img/minecraft_vibe.webp"
+                alt="якщо тут немає іконки писати в дс @_v0ts_ або власнику сервера"
+                class="play__img"
+              />
             </li>
             <li class="play__second-item">
-              <img src="./img/minecraft_vibe.webp" alt="якщо тут немає іконки писати в дс @_v0ts_ або власнику сервера" class="play__img">
+              <img
+                src="./img/minecraft_vibe.webp"
+                alt="якщо тут немає іконки писати в дс @_v0ts_ або власнику сервера"
+                class="play__img"
+              />
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__border"></div>
+        <div class="footer__box">
+          <div class="fox">
+            <div class="fox__box">
+              <img
+                class="fox__img"
+                src="./img/minecraft_title.png"
+                alt="якщо тут немає іконки писати в дс @_v0ts_ або власнику сервера"
+              />
+              <h1 class="fox__name">Долина Лисиць</h1>
+            </div>
+            <p class="fox__title">
+              Copyright © Долина Лисиць 2024. Всі права захищені.
+            </p>
+            <p class="fox__title">
+              Сервер Долина Лисиць не відноситься до Mojang Studios.
+            </p>
+            <div class="fox__second-box">
+              <p class="fox__second-box-title">Сайт створено _VoTs_</p>
+              <p class="fox__second-box-title">Діскорд @_v0ts_</p>
+            </div>
+          </div>
+
+          <div class="social-network">
+            <p class="social-netrwork__title">Соціальні мережі</p>
+            <p class="social-network__title">Скоро</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal window -->
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <!-- <button data-modal-close class="modal__button" type="button">
+          <img src="./img/close.webp" alt="" class="modal__img">
+        </button> -->
+        <ul class="modal__list">
+          <li class="modal__item">
+            <a href="./index.html" class="modal__link">Головна</a>
+          </li>
+          <li class="modal__item">
+            <a href="./news.html" class="modal__link">Новини</a>
+          </li>
+          <li class="modal__item">
+            <a href="/events.html" class="modal__link">Івенти</a>
+          </li>
+          <li class="modal__item">
+            <a href="./gallery.html" class="modal__link">Галерея</a>
+          </li>
+          <li class="modal__item">
+            <a href="./rules.html" class="modal__link">Правила</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>

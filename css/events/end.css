@@ -1,0 +1,84 @@
+.main {
+  padding-top: 80px;
+}
+
+.hero__name {
+  font-size: calc(1rem + 1.2vw);
+  color: #f0a81b;
+  margin-bottom: 3px;
+}
+
+.hero {
+  background-image: linear-gradient(
+      360deg,
+      rgba(13, 13, 17, 1) 10%,
+      rgba(13, 13, 17, 0.7) 40%
+    ),
+    url(../img/gallery/end.jpg);
+  background-position: 50% 50%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.name__author,
+.hero__date {
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 400;
+}
+
+.other {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.other .container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.other__text {
+  margin-left: 5vw;
+  max-width: 678px;
+}
+
+.other__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.other__news {
+  font-size: calc(0.7rem + 0.6vw);
+  font-weight: 600;
+}
+
+.other__item {
+  width: 20vw;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.07);
+  transition-property: background;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.other__item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.other__list-title {
+  font-size: calc(0.4rem + 0.6vw);
+  font-weight: 600;
+}
+
+.other__list-subtitle {
+  font-size: calc(0.4rem + 0.4vw);
+  margin-top: 4px;
+}
+
+.other__list-date {
+  font-size: calc(0.3rem + 0.5vw);
+  margin-top: 4px;
+}

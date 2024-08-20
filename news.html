@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новини</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/news.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
+    <link rel="stylesheet" href="./css/components/modal.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="header__logo-link" href="./index.html">
+          <img class="header__img" src="./img/minecraft_title.png" alt="Logo" />
+        </a>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="./index.html" class="header__link">Головна</a>
+          </li>
+          <li class="header__item">
+            <a href="./news.html" class="header__link">Новини</a>
+          </li>
+          <li class="header__item">
+            <a href="/events.html" class="header__link">Івенти</a>
+          </li>
+          <li class="header__item">
+            <a href="./gallery.html" class="header__link">Галерея</a>
+          </li>
+          <li class="header__item">
+            <a href="./rules.html" class="header__link">Правила</a>
+          </li>
+        </ul>
+        <button data-modal-open class="header__modal-button " type="button">
+          <img class="header__modal-img" src="./img/menu.webp" alt="">
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <h2 class="main__title">НОВИНИ</h2>
+        <ul class="main__list">
+          <li class="main__item">
+            <img src="./img/gallery/spawn.png" alt="" class="main__img" />
+            <h3 class="main__text">Вибори призидента</h3>
+            <p class="main__subtext">
+              Ми раді повідомити, що на нашому сервері відбулися вибори
+              призидента, які виграв гравець Pandorrra, вітаємо!
+              <a class="main__link" href="./news/prisident.html">Читати далі</a>
+            </p>
+            <div class="main__date-box">
+              <p class="main__date-text">10.08.2024</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__border"></div>
+        <div class="footer__box">
+          <div class="fox">
+            <div class="fox__box">
+              <img
+                class="fox__img"
+                src="./img/minecraft_title.png"
+                alt="якщо тут немає іконки писати в дс @_v0ts_ або власнику сервера"
+              />
+              <h1 class="fox__name">Долина Лисиць</h1>
+            </div>
+            <p class="fox__title">
+              Copyright © Долина Лисиць 2024. Всі права захищені.
+            </p>
+            <p class="fox__title">
+              Сервер Долина Лисиць не відноситься до Mojang Studios.
+            </p>
+            <div class="fox__second-box">
+              <p class="fox__second-box-title">Сайт створено _VoTs_</p>
+              <p class="fox__second-box-title">Діскорд @_v0ts_</p>
+            </div>
+          </div>
+
+          <div class="social-network">
+            <p class="social-netrwork__title">Соціальні мережі</p>
+            <p class="social-network__title">Скоро</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal window -->
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <!-- <button data-modal-close class="modal__button" type="button">
+              <img src="./img/close.webp" alt="" class="modal__img">
+            </button> -->
+        <ul class="modal__list">
+          <li class="modal__item">
+            <a href="./index.html" class="modal__link">Головна</a>
+          </li>
+          <li class="modal__item">
+            <a href="./news.html" class="modal__link">Новини</a>
+          </li>
+          <li class="modal__item">
+            <a href="/events.html" class="modal__link">Івенти</a>
+          </li>
+          <li class="modal__item">
+            <a href="./gallery.html" class="modal__link">Галерея</a>
+          </li>
+          <li class="modal__item">
+            <a href="./rules.html" class="modal__link">Правила</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="module" src="./js/modal.js"></script>
+  </body>
+</html>
